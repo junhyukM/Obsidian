@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "리눅스/Linux 운영체제.md",
+                "file": "docker/Docker란.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linux 운영체제"
+              "title": "Docker란"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "리눅스/Linux 운영체제.md",
+                "file": "docker/Docker란.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Linux 운영체제의 백링크"
+              "title": "Docker란의 백링크"
             }
           },
           {
@@ -162,12 +162,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1a53a0cad0a57765",
+  "active": "e5f527325c12e278",
   "lastOpenFiles": [
+    "README.md",
+    "Memo.md",
     "docker/Docker란.md",
     "리눅스/Linux 운영체제.md",
-    "Memo.md",
-    "README.md",
     "docker",
     "리눅스"
   ]
