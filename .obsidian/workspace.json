@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Ubuntu/Ubuntu 기본 환경 설정.md",
+                "file": "Linux/Linux command.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ubuntu 기본 환경 설정"
+              "title": "Linux command"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Ubuntu/Ubuntu 기본 환경 설정.md",
+                "file": "Linux/Linux command.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Ubuntu 기본 환경 설정의 백링크"
+              "title": "Linux command의 백링크"
             }
           },
           {
@@ -164,18 +164,18 @@
   },
   "active": "f5dc49a91a254cfa",
   "lastOpenFiles": [
-    "Linux/Linux 운영체제.md",
-    "docker/Docker란.md",
-    "README.md",
-    "Linux/Linux command.md",
+    "Linux/Ubuntu/docker/docker 기본 환경 설정 1차.md",
     "Linux/Ubuntu/Ubuntu.md",
-    "Linux/Ubuntu/Ubuntu 기본 환경 설정.md",
     "Linux/Ubuntu/Ubuntu 환경설정 2.md",
+    "Linux/Linux 운영체제.md",
+    "Linux/Linux command.md",
+    "Linux/Ubuntu/docker/Docker란.md",
+    "README.md",
     "2025-01-15.md",
     "무제 파일.canvas",
     "Memo.md",
     "Linux/Ubuntu",
-    "docker",
+    "Linux/Ubuntu/docker",
     "Linux"
   ]
 }
