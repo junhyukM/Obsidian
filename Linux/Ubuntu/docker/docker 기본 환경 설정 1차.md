@@ -38,9 +38,24 @@
 > •echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 - Docker 저장소를 APT 소스 리스트에 추가하는 명령어
-
+- <mark style="background: #FFF3A3A6;">`/etc/apt/sources.list.d/docker.list` 파일에 Docker 저장소 정보가 추가</mark>
+- <mark style="background: #FFF3A3A6;">APT는 이 저장소를 통해 Docker 관련 패키지를 검색하고 설치 가능</mark>
+	1. `echo`:
+		- APT 저장소에 추가할 Docker 저장소 정보를 생성
+	2. `arch=$(dpkg --print-architecture)`:
+		- 현재 시스템의 CPU 아키텍처를 자동으로 삽입
+	3. `signed-by=/etc/apt/keyrings/docker.gpg`:
+		- 패키지 서명을 검증하기 위한 GPG 키를 지정
+	4. `$(lsb_release -cs)`:
+		- 현재 Ubuntu 버전의 코드네임을 자동으로 삽입
+	5. `| sudo tee /etc/apt/sources.list.d/docker.list`:
+		- 생성된 저장소 정보를 `/etc/apt/sources.list.d/docker.list` 파일에 저장
+	6.  `> /dev/null`:
+		- 명령어 실행 중 발생하는 출력을 화면에 표시하지 않음
 
 ### 시스템 패키지 업데이트
+
+
 
 ### docker 설치
 
