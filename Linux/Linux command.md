@@ -8,4 +8,7 @@
 ##### apt
 - "Advanced Package Tool"의 약자로, Debian 계열 리눅스 시스템(예: Ubuntu)에서 사용되는 패키지 관리 도구
 - 운영체제에서 <mark style="background: #FFF3A3A6;">소프트웨어 패키지를 설치, 업그레이드, 삭제, 검색</mark>하는 작업을 간편하게 수행
-- 
+
+
+ 변경사항
+ 
