@@ -8,6 +8,7 @@
 ### 필요 패키지 설치
 
 > $ sudo apt-get [[Linux command#install|install]] [[Linux command#apt-transport-https|apt-transport-https]] [[Linux command#ca-certificates|ca-certificates]] [[Linux command#curl|curl]] [[Linux command#gnupg-agent|gnupg-agent]] [[Linux command#software-properties-common|software-properties-common]]
+
 - HTTPS 기반 저장소를 지원하고, 신뢰할 수 있는 패키지 통신을 설정하며, 추가적인 소프트웨어 저장소를 관리할 도구들을 설치
 - 주로 서드파티 저장소 추가 전 준비 단계로 사용
 - 이 명령어는 <mark style="background: #FFF3A3A6;">보안과 관리 효율성을 강화</mark>하고, <mark style="background: #FFF3A3A6;">서드파티 저장소에서 패키지를 설치하기 위해 필요한 기본 도구들을 설정</mark>
@@ -35,7 +36,7 @@
 
 ### apt 저장소 추가
 
-> •echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+>  $ [[Linux command#echo|echo]] [[Linux command#"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https //download.docker.com/linux/ubuntu $(lsb_release -cs) stable"|"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https //download.docker.com/linux/ubuntu $(lsb_release -cs) stable"]] |[[Linux command#(파이프)|^]] sudo [[Linux command#tee|tee]] /etc/apt/sources.list.d/docker.list [[Linux command#> (리다이렉션)|>]] [[Linux command#/dev/null|/dev/null]]
 
 - Docker 저장소를 APT 소스 리스트에 추가하는 명령어
 - <mark style="background: #FFF3A3A6;">`/etc/apt/sources.list.d/docker.list` 파일에 Docker 저장소 정보가 추가</mark>
@@ -55,9 +56,15 @@
 
 ### 시스템 패키지 업데이트
 
+> $ sudo [[Linux command#apt-get|apt-get]] [[Linux command#update|update]]
 
+- 패키지 목록 업데이트
 
 ### docker 설치
+
+> $ sudo apt-get install docker-ce docker-ce-cli containerd.io -y
+
+
 
 ### docker 자동 시작 등록 및 설치 확인
 
