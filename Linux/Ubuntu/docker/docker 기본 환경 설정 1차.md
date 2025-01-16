@@ -8,7 +8,7 @@
 
 ###### 필요 패키지 설치
 
-> $ sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+> $ sudo apt-get [[Linux command#install|install]] [[Linux command#apt-transport-https|apt-transport-https]] [[Linux command#ca-certificates|ca-certificates]] [[Linux command#curl|curl]] [[Linux command#gnupg-agent|gnupg-agent]] [[Linux command#software-properties-common|software-properties-common]]
 
 ###### GPG 키 추가
 
