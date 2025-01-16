@@ -129,7 +129,7 @@
 ---
 
 ##### | (파이프)
-- 앞 명령어의 출력을 뒤 명령어의 입력으로 전달
+- <mark style="background: #FFF3A3A6;">앞 명령어의 출력을 뒤 명령어의 입력으로 전달</mark>
 
  > 활용 예시
  > > [[docker 기본 환경 설정 1차#GPG 키 추가|(1)]] 
@@ -208,7 +208,7 @@
 ---
 
 ##### > (리다이렉션)
-- 출력을 파일이나 장치로 리다이렉트
+- <mark style="background: #FFF3A3A6;">출력을 파일이나 장치로 리다이렉트</mark>
 
  > 활용 예시
  > > [[docker 기본 환경 설정 1차#apt 저장소 추가|(1)]] 
@@ -217,8 +217,25 @@
 ##### /dev/null
 - Linux에서 "블랙홀" 역할을 하는 특수 파일
 	- 데이터가 `/dev/null`로 보내지면 아무 작업도 하지 않고 버려짐
-	- 뒤이어 나오는 경로 파일에 저장
 
  > 활용 예시
  > > [[docker 기본 환경 설정 1차#apt 저장소 추가|(1)]] 
+---
+
+##### docker-ce
+- "Docker Community Edition"의 약자
+	- Docker CE는 <mark style="background: #FFF3A3A6;">Docker의 오픈 소스 커뮤니티 버전. Docker의 핵심 엔진과 기능들을 포함</mark>
+	- Docker를 시스템에 설치하고 컨테이너를 관리하려면 이 패키지가 필요
+
+ > 활용 예시
+ > > [[docker 기본 환경 설정 1차#docker 설치|(1)]] 
+---
+
+##### docker-ce-cli
+- Docker CE의 커맨드라인 인터페이스(CLI) 툴
+	- Docker CE를 설치한 후, 이 CLI를 사용하여 명령어를 통해 Docker 컨테이너를 관리하고 조작
+	- <mark style="background: #FFF3A3A6;">Docker를 명령줄에서 제어하려면 이 CLI 툴이 필요</mark>
+
+ > 활용 예시
+ > > [[docker 기본 환경 설정 1차#docker 설치|(1)]] 
 ---

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Ubuntu/docker/docker 기본 환경 설정 1차.md",
+                "file": "Linux/Linux command.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "docker 기본 환경 설정 1차"
+              "title": "Linux command"
             }
           }
         ]
@@ -163,12 +163,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e5f527325c12e278",
+  "active": "5c1125ab43145929",
   "lastOpenFiles": [
-    "Linux/Ubuntu/docker/(CAN)docker 기본 환경 설정 1차.canvas",
     "Linux/Ubuntu/docker/docker 기본 환경 설정 1차.md",
-    "Linux/Ubuntu/docker/docker 기본 환경 설정 2차.md",
     "Linux/Linux command.md",
+    "Linux/Ubuntu/docker/(CAN)docker 기본 환경 설정 1차.canvas",
+    "Linux/Ubuntu/docker/docker 기본 환경 설정 2차.md",
     "Linux/Ubuntu/Ubuntu.md",
     "Linux/Linux 운영체제.md",
     "Linux/Ubuntu/docker/Docker란.md",
