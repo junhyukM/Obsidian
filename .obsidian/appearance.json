@@ -1,10 +1,13 @@
 {
-  "theme": "system",
-  "accentColor": "#707070",
+  "theme": "moonstone",
+  "accentColor": "#c48787",
   "cssTheme": "Things",
   "textFontFamily": "Inter",
   "monospaceFontFamily": "Inter",
   "interfaceFontFamily": "Inter",
   "baseFontSize": 14,
-  "baseFontSizeAction": true
+  "baseFontSizeAction": true,
+  "enabledCssSnippets": [
+    "obsidian"
+  ]
 }

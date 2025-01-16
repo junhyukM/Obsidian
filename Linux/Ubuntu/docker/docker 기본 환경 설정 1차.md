@@ -16,10 +16,29 @@
 	3. GPG 키 관리: `gnupg-agent` 설치.
 	4. 추가 저장소 관리 도구: `software-properties-common` 설치.
 
-
 ### GPG 키 추가
 
+> $ sudo [[Linux command#mkdir|mkdir]] [[Linux command#-p|-p]] /etc/apt/keyrings
+
+- APT를 위한 키 저장소 디렉토리를 안전하게 준비하기 위한 단계
+	- `/etc/apt/keyrings` 디렉토리를 생성
+	- 디렉토리가 이미 존재하면 아무 작업도 수행하지 않고 넘어감
+	- 이 디렉토리는 보안 키 파일(GPG 키)을 저장하기 위한 디렉토리로 사용
+
+> $ [[Linux command#curl|curl]] [[Linux command#-fsSL(curl 옵션)|-fsSL]] https://download.docker.com/linux/ubuntu/gpg | [[Linux command#(파이프)|^]] sudo [[Linux command#gpg|gpg]] [[Linux command#--dearmor|--dearmor]] [[Linux command#-o /etc/apt/keyrings/docker.gpg|-o /etc/apt/keyrings/docker.gpg]]
+
+- Docker 저장소의 GPG 키가 적절한 형식으로 변환되어 APT가 저장소를 신뢰할 수 있도록 설정
+	1. Docker 저장소에서 제공하는 GPG 키 파일을 안전하게 다운로드
+	2. `|`:  <mark style="background: #FFF3A3A6;">앞 명령어의 출력을 뒤 명령어의 입력으로 전달</mark>
+		- <mark style="background: #BBFABBA6;">다운로드한 데이터를 gpg 명령어로 전달</mark>
+	3. GPG 키 데이터를 바이너리 형식으로 변환 후 `/etc/apt/keyrings/docker.gpg`에 저장
+
 ### apt 저장소 추가
+
+> •echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+- Docker 저장소를 APT 소스 리스트에 추가하는 명령어
+
 
 ### 시스템 패키지 업데이트
 

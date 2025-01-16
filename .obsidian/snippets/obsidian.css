@@ -1,0 +1,19 @@
+/* 미리보기 모드에서 링크 밑줄 제거 */
+.markdown-preview-view a.internal-link {
+    text-decoration: none !important;
+}
+
+/* 편집 모드에서 링크 밑줄 제거 */
+.cm-s-obsidian .cm-link {
+    text-decoration: none !important;
+}
+
+
+/* 인용문 스타일링 */
+blockquote {
+    background-color: #f9f9f9 !important;
+    border-left: 4px solid #3498db !important;
+    padding: 10px 20px !important;
+    margin: 10px 0 !important;
+    font-style: italic !important;
+}
