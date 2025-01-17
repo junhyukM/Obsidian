@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "da16c7dabb613825",
+        "id": "f31d1d5e6492e2a4",
         "type": "tabs",
         "children": [
           {
-            "id": "5c1125ab43145929",
+            "id": "7b242cd2caa92ef4",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -163,15 +163,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5c1125ab43145929",
+  "active": "e5f527325c12e278",
   "lastOpenFiles": [
+    "무제 폴더",
+    "Linux/Linux 운영체제.md",
     "Linux/Ubuntu/docker/docker 기본 환경 설정 1차.md",
+    "Linux/Ubuntu/docker/docker 기본 환경 설정 2차.md",
+    "Linux/Ubuntu/docker/Docker란.md",
+    "Linux/Ubuntu/Ubuntu.md",
     "Linux/Linux command.md",
     "Linux/Ubuntu/docker/(CAN)docker 기본 환경 설정 1차.canvas",
-    "Linux/Ubuntu/docker/docker 기본 환경 설정 2차.md",
-    "Linux/Ubuntu/Ubuntu.md",
-    "Linux/Linux 운영체제.md",
-    "Linux/Ubuntu/docker/Docker란.md",
     "README.md",
     "2025-01-15.md",
     "Memo.md",
