@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Ubuntu/docker/docker 기본 환경 설정 1차.md",
-                "mode": "source",
+                "file": "Linux/Ubuntu/Ubuntu.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "docker 기본 환경 설정 1차"
+              "title": "Ubuntu"
             }
           }
         ]
@@ -165,16 +165,16 @@
   },
   "active": "ec82adcf484b302d",
   "lastOpenFiles": [
-    "Linux/Linux command.md",
-    "Linux/Ubuntu/docker/docker 기본 환경 설정 1차.md",
-    "Linux/Ubuntu/docker/docker 기본 환경 설정 2차.md",
-    "Linux/Ubuntu/docker/Docker란.md",
-    "Linux/Ubuntu/Ubuntu.md",
     "Linux/Linux 운영체제.md",
+    "Linux/Ubuntu/Ubuntu.md",
+    "README.md",
+    "Linux/Ubuntu/docker/Docker란.md",
+    "Linux/Ubuntu/docker/docker 기본 환경 설정 2차.md",
+    "Linux/Ubuntu/docker/docker 기본 환경 설정 1차.md",
+    "Linux/Linux command.md",
     "무제 파일.canvas",
     "무제 폴더",
     "Linux/Ubuntu/docker/(CAN)docker 기본 환경 설정 1차.canvas",
-    "README.md",
     "2025-01-15.md",
     "Memo.md",
     "Linux/Ubuntu",
