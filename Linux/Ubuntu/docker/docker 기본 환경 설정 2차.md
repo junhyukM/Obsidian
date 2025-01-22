@@ -91,3 +91,7 @@
 > $ docker-compose [[Linux command#logs|logs]]
 
 - 실행 중인 컨테이너의 로그 확인
+
+> [http://localhost:8888/lab](http://localhost:8888/lab)
+
+- 위의 주소로 주피터 노트북 실행
