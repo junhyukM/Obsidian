@@ -1,4 +1,11 @@
 {
-  "cssTheme": "Minimal",
-  "theme": "moonstone"
+  "enabledCssSnippets": [
+    "obsidian"
+  ],
+  "interfaceFontFamily": "Inter",
+  "textFontFamily": "Inter",
+  "monospaceFontFamily": "Inter",
+  "cssTheme": "Things",
+  "baseFontSizeAction": true,
+  "accentColor": "#898a8b"
 }
