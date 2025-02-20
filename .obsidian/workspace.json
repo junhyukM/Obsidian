@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Ubuntu/docker/docker 기본 환경 설정 1차.md",
+                "file": "Linux/Linux 운영체제.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "docker 기본 환경 설정 1차"
+              "title": "Linux 운영체제"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Ubuntu/docker/docker 기본 환경 설정 1차.md",
+                "file": "Linux/Linux 운영체제.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "docker 기본 환경 설정 1차 의 백링크"
+              "title": "Linux 운영체제 의 백링크"
             }
           },
           {
@@ -154,6 +154,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "random-note:무작위 노트 열기": false,
       "switcher:빠른 전환기 열기": false,
       "daily-notes:오늘의 일일 노트 열기": false,
       "graph:그래프 뷰 열기": false,
@@ -165,18 +166,22 @@
   },
   "active": "1a53a0cad0a57765",
   "lastOpenFiles": [
+    "C++/문제",
+    "C++/문법",
+    "무제",
+    "C++",
     "Linux/Linux command.md",
+    "README.md",
     "Linux/Linux 운영체제.md",
-    "Linux/Ubuntu/Ubuntu.md",
+    "Linux/Ubuntu/docker/docker 기본 환경 설정 1차.md",
     "conflict-files-obsidian-git.md",
+    "Linux/Ubuntu/Ubuntu.md",
     "Linux/Ubuntu/docker/Docker란.md",
     "Linux/Ubuntu/docker/docker 기본 환경 설정 2차.md",
-    "Linux/Ubuntu/docker/docker 기본 환경 설정 1차.md",
     "Linux/Ubuntu/docker",
     "Linux/Ubuntu/Ubuntu 기본 환경 설정.md",
     "Linux/Ubuntu/Ubuntu 환경설정 2.md",
     "docker/Docker란.md",
-    "README.md",
     "Linux/Ubuntu",
     "Linux",
     "Memo.md",

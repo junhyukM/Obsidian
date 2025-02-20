@@ -62,29 +62,70 @@
 
 ### docker 설치
 
-> $ sudo apt-get install docker-ce docker-ce-cli containerd.io -y
+> $ sudo apt-get install [[Linux command#docker-ce|docker-ce]] [[Linux command#docker-ce-cli|docker-ce-cli]] [[Linux command#containerd.io|containerd.io]] [[Linux command#-y|-y]]
 
+- Docker의 핵심 엔진(Docker CE), CLI 툴(Docker CE CLI), 컨테이너 런타임(Containerd)을 설치하고, 설치 중 사용자 확인 없이 자동으로 진행하도록 설정
+	1. **`sudo`**: 관리자 권한으로 실행
+	2. **`apt-get install`**: 패키지 설치 명령어
+	3. **`docker-ce`**: Docker 커뮤니티 에디션을 설치
+	4. **`docker-ce-cli`**: Docker의 커맨드라인 툴을 설치
+	5. **`containerd.io`**: Docker 컨테이너를 실행할 런타임 패키지 설치
+	6. **`-y`**: 설치 중 자동으로 모든 확인을 'yes'로 처리
 
+- **Docker 엔진 설치**: `docker-ce` 패키지를 설치하여 Docker 엔진을 설정
+- **CLI 툴 설치**: `docker-ce-cli`로 명령줄에서 Docker를 관리할 수 있게 설정
+- **컨테이너 런타임 설치**: `containerd.io`를 설치하여 컨테이너 실행을 위한 런타임을 제공
 
 ### docker 자동 시작 등록 및 설치 확인
 
+> $ sudo [[Linux command#systemctl|systemctl]] [[Linux command#enable|enable]] docker
 - docker 자동 시작 등록
+
+> $ sudo systemctl [[Linux command#start|start]] docker
 - docker 시작
+
+> $ sudo systemctl [[Linux command#status|status]] docker
 - docker 상태 확인
+
 ### docker 실행 권한 추가
 
 - Usermod를 통한 실행권한 추가
-	- sudo usermod -aG docekr {사용자 계정}
-	- logout 후 groups 확인
 
-### docker-composen 설치
+> $ sudo [[Linux command#usermod|usermod]] [[Linux command#-a (in -aG)|-a]][[Linux command#-G|G]] docker minjh
+- sudo usermod -aG docekr {사용자 계정}
+- 사용자 `minjh`를 `docker` 그룹에 추가하여, 비관리자 권한으로 Docker 명령어를 사용할 수 있도록 설정
 
-- 최신 버전의 docker-compose 설치
+> $ [[Linux command#groups|groups]]
+> $ docker [[Linux command#ps (in docker)|ps]] [[Linux command#-a|-a]]
+> $ docker [[Linux command#images|images]]
+- logout 후 groups 확인
+- **`groups`**:
+    - 현재 사용자가 속한 그룹 목록을 확인
+- **`docker ps -a`**:
+    - Docker 컨테이너 전체(실행 중 + 정지된 상태)의 목록을 확인
+- **`docker images`**:
+    - 현재 시스템에 저장된 Docker 이미지 목록을 확인
+### docker-compose 설치
+
+> $ sudo curl [[Linux command#-L|-L]] "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" [[Linux command#-o /etc/apt/keyrings/docker.gpg|-o]] /usr/local/bin/docker-compose
+- `curl`을 사용 최신 버전 Docker Compose 바이너리를 다운로드하고 `/usr/local/bin/docker-compose`에 저장
+- 시스템과 아키텍처에 맞는 바이너리를 동적으로 선택하여 다운로드
+
+> $ sudo [[Linux command#chmod|chmod]] [[Linux command#+x|+x]] /usr/local/bin/docker-compose
 - docker-compose 권한 설정
+
+> $ docker-compose [[Linux command#-v|-v]]
 - docker-compose 버전 확인
 
 ### python pip 설치
 
-- 패키지 업데이트
+> $ sudo apt update && sudo apt upgrade [[Linux command#-y|–y]]
+> $ sudo apt install [[Linux command#software-properties-common|software-properties-common]] -y
+- 패키지 업데이트, 패키지 업그레이드
+- PAA 추가를 위한 필수 도구 설치
+
+> sudo [[Linux command#add-apt-repository|add-apt-repository]] [[Linux command#ppa deadsnakes/ppa|ppa:deadsnakes/ppa]]
 - Deadsnakes 팀이 유지하는 PPA를 repository에 등록
-- pip 설치
+
+> sudo apt [[Linux command#install|install]] [[Linux command#python3-pip|python3-pip]] [[Linux command#python3-venv|python3-venv]]
+- Python 3용 패키지 관리자`pip`와 가상 환경`venv`을 설치

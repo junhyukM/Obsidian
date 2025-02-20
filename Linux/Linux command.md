@@ -47,7 +47,7 @@
 - apt-get의 서브 명령어로, <mark style="background: #FFF3A3A6;">지정된 패키지를 설치</mark>
 
  > 활용 예시
- > > [[docker 기본 환경 설정 1차#필요 패키지 설치|(1)]] 
+ > > [[docker 기본 환경 설정 1차#필요 패키지 설치|(1)]] [[docker 기본 환경 설정 1차#python pip 설치|(2)]] 
 ---
 
 ##### apt-transport-https
@@ -75,7 +75,7 @@
 - 데이터를 전송하거나 가져오기 위한 명령줄 도구로, <mark style="background: #FFF3A3A6;">일반적으로 URL을 통해 파일 또는 데이터를 다운로드</mark>
 
  > 활용 예시
- > > [[docker 기본 환경 설정 1차#필요 패키지 설치|(1)]] [[docker 기본 환경 설정 1차#GPG 키 추가|(2)]]
+ > > [[docker 기본 환경 설정 1차#필요 패키지 설치|(1)]] [[docker 기본 환경 설정 1차#GPG 키 추가|(2)]] [[docker 기본 환경 설정 2차#NodeJS 설치|(3)]]
 ---
 
 ##### gnupg-agent
@@ -111,7 +111,7 @@
 	- `-p`를 사용하면 <mark style="background: #FFF3A3A6;">전체 경로를 한 번에 생성</mark>
 
  > 활용 예시
- > > [[docker 기본 환경 설정 1차#GPG 키 추가|(1)]] 
+ > > [[docker 기본 환경 설정 1차#GPG 키 추가|(1)]] [[docker 기본 환경 설정 2차#Miniconda 다운로드 및 설치]|(2)]]
 ---
 
 ##### -fsSL(curl 옵션)
@@ -125,7 +125,7 @@
 	- 에러 발생 시 알리고, 리디렉션을 자동으로 처리
 
  > 활용 예시
- > > [[docker 기본 환경 설정 1차#GPG 키 추가|(1)]] 
+ > > [[docker 기본 환경 설정 1차#GPG 키 추가|(1)]] [[docker 기본 환경 설정 2차#NodeJS 설치|(2)]]
 ---
 
 ##### | (파이프)
@@ -239,3 +239,268 @@
  > 활용 예시
  > > [[docker 기본 환경 설정 1차#docker 설치|(1)]] 
 ---
+
+##### containerd.io
+- Docker 엔진의 컨테이너 런타인 `containerd`를 제공하는 패키지
+	- `containerd`는 컨테이너의 실행, 관리 및 네트워크를 담당하는 하위 시스템
+	- Docker는 `containerd`를 내부적으로 사용하여 컨테이너를 실행
+	- <mark style="background: #FFF3A3A6;">Docker 엔진을 사용하여 컨테이너를 실행하려면 이 런타임이 필요</mark>
+
+ > 활용 예시
+ > > [[docker 기본 환경 설정 1차#docker 설치|(1)]] 
+---
+
+##### -y
+- 설치 시, 자동으로 'yes'를 선택하는 옵션
+	- APT는 패키지를 설치할 때 종종 사용자에게 확인을 요청. `-y` 옵션을 사용하면 이러한 확인을 자동으로 'yes'로 처리하여 설치가 자동으로 진행
+	- 설치 중에 여러 번의 확인을 피하고 싶을 때 사용
+
+ > 활용 예시
+ > > [[docker 기본 환경 설정 1차#docker 설치|(1)]] [[docker 기본 환경 설정 1차#python pip 설치|(2)]] 
+---
+
+##### systemctl
+- 시스템 및 서비스 관리 도구
+- **Systemd**를 사용하는 리눅스 시스템에서 서비스를 제어
+	- `Docker` 서비스를 제어
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 1차#docker 자동 시작 등록 및 설치 확인|(1)]] 
+---
+
+##### start
+- 지정된 서비스를 **즉시 시작**
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 1차#docker 자동 시작 등록 및 설치 확인|(1)]] 
+---
+
+##### status
+- 지정된 서비스의 현재 상태를 표시
+- 상태 정보에는 <mark style="background: #FFF3A3A6;">서비스의 실행 여부, 시작 시간, 로그 등이 포함</mark>
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 1차#docker 자동 시작 등록 및 설치 확인|(1)]] 
+---
+
+##### enable
+- 지정된 서비스(Docker)를 <mark style="background: #FFF3A3A6;">부팅 시 자동으로 시작하도록 설정</mark>
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 1차#docker 자동 시작 등록 및 설치 확인|(1)]] 
+---
+
+##### usermod
+- <mark style="background: #FFF3A3A6;">사용자의 정보를 수정</mark>하는 명령어
+- 그룹 추가, 사용자 계정 잠금/잠금 해제, 홈 디렉터리 변경 등을 수행
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 1차#docker 실행 권한 추가|(1)]] 
+---
+
+##### -a (in -aG)
+- "append"의 약자
+- <mark style="background: #FFF3A3A6;">기존 그룹을 유지하면서 새로운 그룹을 추가</mark>
+- 이 옵션이 없으면 사용자가 기존에 속한 그룹이 제거될 수 있음
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 1차#docker 실행 권한 추가|(1)]] 
+---
+
+##### -G
+- 사용자가 속할 보조 그룹(supplementary group)을 지정
+- 이어서 추가할 그룹 이름 기입
+	- ex) docker
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 1차#docker 실행 권한 추가|(1)]] 
+---
+
+##### groups
+- 현재 사용자 계정이 속한 <mark style="background: #FFF3A3A6;">모든 그룹을 나열하는 명령어</mark>
+	- 현재 사용자가 속한 기본 그룹 및 보조 그룹 목록을 출력
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 1차#docker 실행 권한 추가|(1)]] 
+---
+
+##### ps (in docker)
+- 현재 <mark style="background: #FFF3A3A6;">실행 중인 컨테이너 목록을 출력</mark>하는 서브 명령어
+	- 프로세스 관리 도구인 `ps` 명령어와 유사하게 동작
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 1차#docker 실행 권한 추가|(1)]] [[docker 기본 환경 설정 2차#Jupyter 설치|(2)]]
+---
+
+##### -a
+- "all"의 약자
+	- 정지된 컨테이너까지 포함하여 모든 컨테이너를 표시
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 1차#docker 실행 권한 추가|(1)]] 
+---
+
+##### images 
+- 현재 <mark style="background: #FFF3A3A6;">시스템에 저장된 Docker 이미지 목록을 출력</mark>하는 서브 명령어
+- 출력 정보:
+    - `REPOSITORY`: 이미지 이름
+    - `TAG`: 이미지 태그(버전)
+    - `IMAGE ID`: 이미지의 고유 식별자
+    - `CREATED`: 이미지가 생성된 시간
+    - `SIZE`: 이미지 크기
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 1차#docker 실행 권한 추가|(1)]] 
+---
+
+##### -L
+- <mark style="background: #FFF3A3A6;">리다이렉션을 따라가도록 지정</mark>
+- URL이 다른 위치로 이동된 경우에도 올바른 파일을 다운로드할 수 있도록 함
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 1차#docker-compose 설치|(1)]] 
+---
+
+##### chmod
+- <mark style="background: #FFF3A3A6;">파일 권한을 변경</mark>하는 명령어
+- `chmod`는 "change mode"의 약자
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 1차#docker-compose 설치|(1)]] 
+---
+
+##### +x
+- 실행 권한을 추가
+- `+x`는 파일을 <mark style="background: #FFF3A3A6;">실행 가능(executable)하도록 설정</mark>
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 1차#docker-compose 설치|(1)]] 
+---
+
+##### -v
+- "version"의 약자
+- 현재 설치된 Docker Compose의 버전을 출력
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 1차#docker-compose 설치|(1)]] 
+---
+
+##### add-apt-repository
+- 새로운 PPA(Private Package Archive)를 추가하는 명령어
+- 추가된 PPA는 `/etc/apt/sources.list.d/`에 파일로 저장
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 1차#python pip 설치|(1)]] 
+---
+
+##### ppa:deadsnakes/ppa
+- Deadsnakes 팀이 제공하는 Python 관련 패키지를 배포하는 PPA 저장소
+- Python의 최신 버전을 제공하며, 안정적으로 유지
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 1차#python pip 설치|(1)]] 
+---
+
+##### python3-pip
+- Python 패키지 관리자 pip의 Python 3 버전
+- Python 모듈과 라이브러리를 설치하는 데 사용
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 1차#python pip 설치|(1)]] 
+---
+
+##### python3-venv
+- Python 3의 가상 환경 관리 도구
+- Python 가상 환경을 생성하고 격리된 작업 환경 만들 수 있음
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 1차#python pip 설치|(1)]] 
+---
+
+##### wget
+- 파일을 URL에서 다운로드하는 명령어
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 2차#Miniconda 다운로드 및 설치|(1)]] 
+---
+
+##### bash
+- `bash` 셸을 사용하여 스크립트를 실행
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 2차#Miniconda 다운로드 및 설치|(1)]] 
+---
+
+##### -b
+- 설치 과정에서 사용자 입력을 요구하지 않도록 비대화형 모드로 실행
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 2차#Miniconda 다운로드 및 설치|(1)]] 
+---
+
+##### -u
+- 기존 설치 내용을 덮어씀
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 2차#Miniconda 다운로드 및 설치|(1)]] 
+---
+
+##### -E
+- 관리자 권한을 실행할 때 현재 사용자의 환경 변수를 유지
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 2차#NodeJS 설치|(1)]] 
+---
+
+##### -g
+- 패키지를 전역(global)으로 설치
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 2차#NodeJS 설치|(1)]] 
+---
+
+##### build
+- Docker 이미지 생성 시 사용하는 명령어
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 2차#Jupyter 설치|(1)]] 
+---
+
+##### -t
+- 생성할 Docker 이미지에 태그(tag) 붙이는 옵션
+- 이어서 Docker 이미지의 이름 기입
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 2차#Jupyter 설치|(1)]] 
+---
+
+##### vi
+- 파일을 편집하기 위한 텍스트 편집기
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 2차#Jupyter 설치|(1)]] 
+---
+
+##### up
+- 정의된 서비스를 시작
+- 필요한 이미지를 빌드하고 컨테이너를 실행
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 2차#Jupyter 설치|(1)]] 
+---
+
+##### -d
+- 서비스를 백그라운드 모드에서 실행
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 2차#Jupyter 설치|(1)]] 
+---
+
+##### logs
+- 실행 중인 컨테이너의 로그를 출력
+- 각 서비스의 동작 상태 확인 가능
+
+	 > 활용 예시
+	 > > [[docker 기본 환경 설정 2차#Jupyter 설치|(1)]] 
+---
+
+
