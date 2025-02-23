@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Linux 운영체제.md",
+                "file": "Linux/Ubuntu/Ubuntu.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linux 운영체제"
+              "title": "Ubuntu"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Linux 운영체제.md",
+                "file": "Linux/Ubuntu/Ubuntu.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Linux 운영체제 의 백링크"
+              "title": "Ubuntu 의 백링크"
             }
           },
           {
@@ -164,15 +164,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1a53a0cad0a57765",
+  "active": "e5f527325c12e278",
   "lastOpenFiles": [
+    "Linux/Linux 운영체제.md",
+    "Linux/Linux command.md",
     "C++/문제",
     "C++/문법",
     "무제",
     "C++",
-    "Linux/Linux command.md",
     "README.md",
-    "Linux/Linux 운영체제.md",
     "Linux/Ubuntu/docker/docker 기본 환경 설정 1차.md",
     "conflict-files-obsidian-git.md",
     "Linux/Ubuntu/Ubuntu.md",
