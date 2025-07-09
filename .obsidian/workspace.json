@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c6fe3f9a1db33e43",
+        "id": "90b7b6fd4b0a9f43",
         "type": "tabs",
         "children": [
           {
-            "id": "1a53a0cad0a57765",
+            "id": "704145ee137db7e5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Ubuntu/Ubuntu.md",
-                "mode": "preview",
+                "file": "README.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ubuntu"
+              "title": "README"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "05c294f8be45adda",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Ubuntu/Ubuntu.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Ubuntu 의 백링크"
+              "title": "README 의 백링크"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Linux command.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Linux command의 나가는 링크"
+              "title": "README 의 나가는 링크"
             }
           },
           {
@@ -150,11 +150,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "random-note:무작위 노트 열기": false,
       "switcher:빠른 전환기 열기": false,
       "daily-notes:오늘의 일일 노트 열기": false,
       "graph:그래프 뷰 열기": false,
@@ -164,18 +164,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e5f527325c12e278",
+  "active": "704145ee137db7e5",
   "lastOpenFiles": [
+    "무제.canvas",
+    "스터디/스터디 1회차.md",
+    "스터디/임베딩.md",
+    "스터디/코사인 유사도(Cosine similarity).md",
+    "스터디/CLIP.md",
+    "스터디/ResNet50.md",
+    "Linux/Ubuntu/docker/docker 기본 환경 설정 1차.md",
     "Linux/Linux 운영체제.md",
     "Linux/Linux command.md",
+    "스터디",
+    "Linux/Ubuntu/Ubuntu.md",
     "C++/문제",
     "C++/문법",
-    "무제",
     "C++",
     "README.md",
-    "Linux/Ubuntu/docker/docker 기본 환경 설정 1차.md",
     "conflict-files-obsidian-git.md",
-    "Linux/Ubuntu/Ubuntu.md",
     "Linux/Ubuntu/docker/Docker란.md",
     "Linux/Ubuntu/docker/docker 기본 환경 설정 2차.md",
     "Linux/Ubuntu/docker",
